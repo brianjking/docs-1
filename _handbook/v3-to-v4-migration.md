@@ -10,7 +10,7 @@ published: true
 post_date: 2018-11-21 16:33:41
 ---
 <!-- wp:paragraph -->
-<p>EasyEngine v4 is complete rewrite in terms of many aspects. The key one being:</p>
+<p>EasyEngine v4 is a complete rewrite the EasyEngine application. There are several key changes outlined below:</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list {"ordered":true} -->
@@ -82,15 +82,15 @@ post_date: 2018-11-21 16:33:41
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>As v4 depends on docker, it is affected by <a href="https://loomchild.net/2016/09/04/docker-can-create-only-31-networks-on-a-single-machine/">Docker's limitation of 31 network per machine</a>.</p>
+<p>As v4 depends on Docker, it is affected by <a href="https://loomchild.net/2016/09/04/docker-can-create-only-31-networks-on-a-single-machine/">Docker's limitation of 31 network per machine</a>.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>v4 creates one network per site. Then v4 also needs few Docker networks for global services. So roughly we limit the&nbsp;<g class="gr_ gr_27 gr-alert gr_gramm gr_inline_cards gr_run_anim Grammar only-ins replaceWithoutSep" id="27" data-gr-id="27">number</g> of sites to 25.</p>
+<p>v4 creates one network connection per site. EasyEngine v4 also needs few Docker network connections for global services. So roughly we limit the&nbsp;<g class="gr_ gr_27 gr-alert gr_gramm gr_inline_cards gr_run_anim Grammar only-ins replaceWithoutSep" id="27" data-gr-id="27">number</g> of sites to 25.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Please note, a WordPress multisite is counted as a single site. We highly recommend you use&nbsp;WordPress multisite more often. Aside site limit,&nbsp;multisite reduces overall burden and in a way enforce usage of quality codes.</p>
+<p>Please note, a WordPress multisite is counted as a single site. We highly recommend you consider using &nbsp;WordPress multisite more often. Aside site limit,&nbsp;multisite reduces overall burden and in a way enforce usage of quality codes.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -130,7 +130,7 @@ post_date: 2018-11-21 16:33:41
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>So v4 is completely rewritten in PHP. Since PHP used by EasyEngine itself and PHP used by sites created via EasyEngine are not related, the&nbsp;EasyEngine itself is coded in PHP 7.2 to make most of the latest PHP version.</p>
+<p>EasyEngine v4 is completely rewritten in PHP. Since PHP used by EasyEngine itself and PHP used by sites created via EasyEngine are not related, the&nbsp;EasyEngine itself is coded in PHP 7.2 to make most of the latest PHP version.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
@@ -138,7 +138,7 @@ post_date: 2018-11-21 16:33:41
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>You may have used WP-CLI in past. You are in for a good news. <a href="https://easyengine.io/handbook/internal/wp-cli/">v4 uses WP-CLI as a base framework</a>.&nbsp;</p>
+<p>You may have used WP-CLI in the past. EasyEngine<a href="https://easyengine.io/handbook/internal/wp-cli/">v4 uses WP-CLI as a base framework</a>.&nbsp;</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -150,7 +150,7 @@ post_date: 2018-11-21 16:33:41
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>In v4, all PHP and WordPress sites will be created using the latest PHP version by default. At the time of v4.0.0 release, PHP is (was) set to PHP 7.2 by default. You can also create site in PHP 5.6 if you want.</p>
+<p>In EasyEngine v4, all PHP and WordPress sites will be created using the latest PHP version by default. At the time of the v4.0.0 release, PHP is (was) set to PHP 7.2 by default. You can also create sites in EasyEngine v4 using PHP 5.6 if necessary. Please note that PHP 5.6 and PHP 7.0 will reach <code>EOL</code> on 31 December 2018. You can read more <a href="https://www.wordfence.com/blog/2018/10/php5-dangerous/">here</a> or <a href="http://php.net/supported-versions.php">here</a>.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
@@ -182,7 +182,7 @@ post_date: 2018-11-21 16:33:41
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Site creation - the biggest EasyEngine feature, has undergone some significant changes. Overall, there is no real loss in functionality but few things are removed and renamed.&nbsp; As this is biggest command, it is documented here in detail here.</p>
+<p>Site creation - the biggest EasyEngine feature, has undergone some significant changes. Overall, there is no real loss in functionality but few things are removed and renamed.&nbsp; As this is biggest command, it is documented here in detail <a href="https://easyengine.io/commands/site/">here</a>.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4} -->
